@@ -1,10 +1,14 @@
 import React from 'react'
 import Image from 'next/image'
 import foto from '@/../public/foto.jpg'
+import ScrollButton from './scrollbutton'
+import CardsContainer from './experiences'
+
 
 const Mainpage = () => {
   return (
-    <div className='mt-20 flex justify-center items-center mb-20'>
+    <>
+    <div className='mt-20 flex justify-center items-center'>
       <div className='text-left mr-8'>
         <h1 className='text-7xl text-cyan-400'>Full-Stack Developer</h1>
         <h1 className='text-7xl text-white'>Santiago Berri</h1>
@@ -23,8 +27,16 @@ const Mainpage = () => {
           width={400} 
           height={400} 
         />
-      </div>
+        
+      </div> 
     </div>
+    <div className='mt-64 flex justify-center'>
+    <ScrollButton/>
+    </div>
+    <div>
+      <CardsContainer />
+    </div>
+    </>
   )
 }
 
