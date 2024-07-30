@@ -1,8 +1,10 @@
+import Link from 'next/link'
 import React from 'react'
 
 const Social = () => {
   return (
     <div>
+        <Link href={"https://www.linkedin.com/in/santiago-berri-3285202b8/"} target="_blank">
         <button
   className="mt-4 group w-10 hover:w-48 h-10 hover:bg-sky-600 relative bg-sky-700 rounded text-neutral-50 duration-700 before:duration-700 before:hover:500 font-bold flex justify-start gap-2 items-center p-2 pr-6 before:absolute before:-z-10 before:left-8 before:hover:left-40 before:w-6 before:h-6  before:rotate-45"
 >
@@ -24,7 +26,7 @@ const Social = () => {
     className="origin-left inline-flex duration-100 group-hover:duration-300 group-hover:delay-500 opacity-0 group-hover:opacity-100 border-l-2 px-1 transform scale-x-0 group-hover:scale-x-100 transition-all"
     >Santiago Berri</span>
 </button>
-
+    </Link>
     </div>
   )
 }
